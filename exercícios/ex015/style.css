@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+body{
+    background-color: lightcyan;
+    color: darkviolet;
+    text-align: justify;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 20px;
+}
+h1{
+    font-size: 1.3em;
+    color: deepskyblue;
+    background-color: firebrick;
+}
+p{
+    font-style: oblique;
+    background-color: forestgreen;
+}
+/**este é um exemplo de CSS externo básico**/

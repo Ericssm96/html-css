@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas</title>
+    <link rel="shortcut icon" href="mugiwara.ico" type="image/x-icon">
+</head>
+<body>
+    <h1>Trabalhando com listas</h1>
+    <h2>Listas Ordenadas</h2>
+    <ol> <!--Lista ordenada-->
+        <li>Acordar</li><!--Representação dos itens da lista, tem por padrão enumeração, mas pode ser alterado o type entre 1, a, A, i e I, também pode ser usado o start="numero" para escolher de onde começar a enumerar a lista.-->
+        <li>Tomar café</li>
+        <li>comer</li>
+        <li>Ler</li>
+        <li>Estudar</li>
+    </ol>
+    <ul>
+        <li>Pão</li>
+        <li>Queijo</li>
+        <li>Mao</li>
+        <li>Mel</li>
+    </ul>
+    <h2>Consoles e jogos favoritos</h2>
+    <ul>
+        <li>PC</li>
+        <ul type="square">
+            <li>Age of Empires 2 &#x2694</li>
+            <li>WarCraft 3 &#x1F9D9</li>
+            <ul type="circle">
+                <li><img src="wc3ftsmall.png" alt="wcft"> <strong>The Frozen Throne</strong></li>
+                <li><img src="wc3rocsmall.png" alt="wcroc"> <strong>Reign of Chaos</strong></li>
+            </ul>
+            <li>Unreal Tournament 2004 (melhor jogo da vida &#x2764!!!!)</li>
+            <li>Counter Strike &#x1F52B</li>
+            <li>Hades &#x1F480</li>
+        </ul>
+        <li>PS3</li>
+        <ul type="square" start="6">
+            <li>The Elder Scrolls V: Skyrim &#x1F409</li>
+            <li>GTA 5 &#x1F697</li>
+            <li>Infamous &#x26A1</li>
+            <li>God of War 3 &#x2694</li>
+        </ul>
+    </ul>
+    <h2>Tem também as listas de definição.</h2><!-- Apesar de ter um efeito visual que pode ser causado por outras tags, essa lista relaciona diretamente os pares termo/descrição e isso nos ajuda muito em sites de pesquisa.-->
+    <dl>
+            <dt>HTML</dt>
+            <dd>Linguagem de marcação responsável por criar o conteúdo dos sites.</dd>
+
+            <dt>CSS</dt>
+            <dd>Linguagem de marcação de estilização das páginas web.</dd>
+
+            <dt>JavaScript</dt>
+            <dd>Linguagem de programação responsável pela parte de interação e várias outras coisas na página (mas principalmente interação).</dd>
+    </dl>
+</body>
+</html>

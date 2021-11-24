@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hyperlinks</title>
+</head>
+<body>
+    <h1>Usando Links Externos</h1>
+    <p>Você pode acessar o meu <a href="https://github.com/gustavoguanabara/html-css/tree/master/aulas-pdf" target="_blank" rel="external">menu de aulas online</a> aqui.</p> <!-- O atributo target pode usar 4 valores, sendo esses: _blank (abre o link em uma página nova), _self (abre o link na página atual, que é o comportamento padrão da tag <a href>, _top (desfazer todos os frames ou janelas e abrir o destino no navegador completo), _top (desfazer todos os frames e abrir o destino no navegador completo), e nome-do-frame (caso esteja usando frames, indicar o nome da janela a abrir). -->
+    <p>ou acessar aquela pagina que criou tipo <a href="C:\Users\Cliente\Documents\html-css\exercícios\ex008\index.html" target="_blank" rel="extermnal">essa</a></p> <!-- O atributo rel é puramente semântico e serve para ajudar mecanismos de pesquisas a ver e interpretar os hyperlinks do nosso site. Ele pode receber um dos seguintes 5 valores: next (indica que o link é para a próxima parte do documento atual), prev (indica que o link é para a parte anterior do documento atual), author (indica que é um link para o site do autor do artigo atual), external (indica que é um link para outro site que não faz parte do site atual), nofollow (indica que é um link para um site não endossado, como um link pago, o que não irá fazer afetar o usuário, apenas fará com que mecanismos de pesquisa não sigam este link relacionando ele à minha página, o clássico "se alguém te perguntar n fui eu que falei") -->
+    <h2>Usando links internos</h2>
+    <p>Passe para a <a href="C:\Users\Cliente\Documents\html-css\exercícios\ex010\pag002.html" target="_self" rel="next">próxima página</a> para ver um exemplo de link interno.</p>
+    <p>Você também pode acessar a <a href="C:\Users\Cliente\Documents\html-css\exercícios\ex010\noticias\pag003.html" rel="next">página de notícias.</a></p>
+    <h2>Fazendo downloads</h2>
+    <p>Eu posso fazer download <a href="C:\Users\Cliente\Documents\html-css\exercícios\ex010\pdf\curreric.pdf" download="curreric.pdf" type="application/pdf">clicando aqui</a> usando o atribuo download na tag a href, mas é necessário especificar o tipo e extensão de arquivo a ser baixado.</p>
+    <p>Ou você também pode baixar <a href="C:\Users\Cliente\Documents\html-css\exercícios\ex010\pdf\curreric.rar" download="curreric.rar" type="application/vnd.rar">esse arquivo</a> .rar.</p>
+</body>
+</html>

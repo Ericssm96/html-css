@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML 5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do navegador.</p>
+
+<picture>
+    <source media="(max-width: 750px)" srcset="img/kobe.png" type="image/png">
+    <source media="(max-width: 1000px)" srcset="img/den.png" type="image/png">
+    <img src="img/denj.jpg" alt="foto flexivel">
+</picture>
+<!--
+<h1>Reproduzindo áudio.</h1>
+<p>Estamos aprendendo a reproduzir áudios em HTML5.</p>
+<audio src="media/bay street b.mp3" controls autoplay></audio>
+ compatível com os formatos mp3, wav e ogg.
+comentei essa maneira por não ser a mais eficaz de se fazer e não vai rodar em todos os navegadores como eu quero por razões explicadas no tópico 12 do caderno.-->
+<h1>Reproduzindo áudio</h1>
+<p>Estamos aprendendo a reproduzir áudios em HTML5.</p>
+<audio preload="metadata" autoplay controls>
+    <source src="media/bay street b.mp3" type="audio/mp3">
+    <!-- <source src="media/bay street b.ogg" type="audio/ogg">
+    esse código só vai rodar se o arquivo de cima não rodar no navegador, e se tiver um código com um formato diferente embaixo, ele vai seguir a mesma lógica. Caso nenhum dos formatos funcione, criar um parágrafo disponibilizando o mesmo arquivo para download. -->
+    <p>Infelizmente seu navegador não suporta o áudio. <a href="media/travel nonstop.mp3">Clique aqui para baixar o arquivo .mp3.</a></p>
+
+</audio>
+
+</body>
+</html>
