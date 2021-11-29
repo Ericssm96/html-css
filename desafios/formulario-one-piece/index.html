@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div id="container">
+        <header>
+            <h1 id="title">Formulário de Inscrição para Mugiwara</h1>
+            <p id="description">Você tem o que é preciso pra navegar os mares com o Rei dos Piratas? Descubra!</p>
+        </header>
+        <main id="main">
+            <form action="" id="survey-form">
+                <label for="name" id="name-label">Nome</label>
+                <input type="text" required name="name" id="name" placeholder="Eric Don! Avortep">
+                <label for="email" id="email-label">Email</label>
+                <input type="email" required name="email" id="email" placeholder="seu_email@dominio.com">
+                <label for="number" id="number-label">Idade (opcional)</label>
+                <input type="number" name="age" id="number" placeholder="25" max="130" min="0">
+                <label for="team-role">Para qual função você tá aplicando?</label>
+                <input type="text" name="team-role" id="team-role" placeholder="Pirata hacker">
+                <div id="radio-box">
+                    <p>Você já teve afiliações com o Governo Mundial antes?</p>
+                    <div id="alternativas">
+                        
+                        <label for="confirmacao">
+                            <input type="radio" name="afiliacao" id="confirmacao" value="sim">Sim :/
+                        </label>
+                        
+                        <label for="negacao">
+                            <input type="radio" name="afiliacao" id="negacao" value="nao">Não ^^
+                        </label>
+                        
+                        <label for="calado">
+                            <input type="radio" name="afiliacao" id="calado" value="talvez">O efeito de uma akuma no mi me impede de responder esta pergunta
+                        </label>
+                    </div>
+                </div>
+                <label for="dropdown">
+                    Quem é o seu Mugiwara favorito?
+                </label>
+                    <select name="mugiwaras" id="dropdown">
+                        <option value="selecione">Selecione uma opção</option>
+                        <option value="luffy">Luffy</option>
+                        <option value="zoro">Zoro</option>
+                        <option value="nami">Nami</option>
+                        <option value="usopp">Usopp</option>
+                        <option value="sanji">Sanji</option>
+                        <option value="chopper">Chopper</option>
+                        <option value="robin">Nico Robin</option>
+                        <option value="franky">Franky</option>
+                        <option value="brook">Brook</option>
+                        <option value="jinbei">Jinbei</option>
+                        <option value="carrot">Carrot</option>
+                        <option value="yamato">Yamato</option>
+                    </select>
+
+                <div>
+                    <p id="check-title">Você já sobreviveu ao encontro com um desses piratas?</p>
+                    
+                    <label for="crocodile">
+                        <input type="checkbox" name="shichibukai" id="crocodile" value="crocodile">Crocodile
+                    </label>
+                   
+                    <label for="mihawk">
+                        <input type="checkbox" name="shichibukai" id="mihawk" value="mihawk">Mihawk
+                    </label>
+                    
+                    <label for="jinbei-shichi">
+                        <input type="checkbox" name="shichibukai" id="jinbei-shichi" value="jinbei">Jinbei
+                    </label>
+                    
+                    <label for="kuma">
+                        <input type="checkbox" name="shichibukai" id="kuma" value="kuma">Bartholomew Kuma
+                    </label>
+                    
+                    <label for="gekko-moriah">
+                        <input type="checkbox" name="shichibukai" id="gekko-moriah" value="moriah">Gekko Moriah
+                    </label>
+
+                    
+                    <label for="boa-hancock">
+                        <input type="checkbox" name="shichibukai" id="boa-hancock" value="boa">Boa Hancock
+                    </label>
+                    
+                    <label for="trafalgar-law">
+                        <input type="checkbox" name="shichibukai" id="trafalgar-law" value="law">Trafalgar Don! Water Law
+                    </label>
+                    
+                    <label for="edward-weevil">
+                        <input type="checkbox" name="shichibukai" id="edward-weevil" value="weevil">Edward Weevil
+                    </label>
+                    
+                    <label for="barba-negra">
+                        <input type="checkbox" name="shichibukai" id="barba-negra" value="teach">Edward Don! Teach
+                    </label>
+                    
+                    <label for="buggy">
+                        <input type="checkbox" name="shichibukai" id="buggy" value="buggy">Buggy
+                    </label>
+                </div>
+                <label for="recado">Algum comentário ou recado?</label>
+                <textarea name="recado" id="recado" cols="60" rows="10"></textarea>
+                <input type="submit" value="Enviar!" id="submit">
+            </form>
+        </main>
+    </div>
+</body>
+
+</html>
